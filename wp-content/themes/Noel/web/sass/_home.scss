@@ -186,6 +186,12 @@
     }
 }
 
+.sticky {
+    @include breakpoint (small) {
+        margin-top: 0 !important;
+    }
+}
+
 //Slider
 .img-slider {
     text-align: center;
@@ -374,10 +380,6 @@
     }
     #gform_2 .gform_body .gform_page_footer .gform_previous_button {
         margin-right: 1rem;
-    }
-    #gform_2 .gform_body .gform_page_footer .gform_next_button {
-        margin-top: 0;
-        // margin-left: 3rem;
     }
 }
 

@@ -7557,17 +7557,21 @@ table.hover tr:nth-of-type(even):hover {
     color: #787878;
     font-size: 1.25rem; }
 
-/* line 190, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+/* line 189, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+.sticky {
+  margin-top: 0 !important; }
+
+/* line 196, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
 .img-slider {
   text-align: center;
   height: 44.25rem;
   background-color: #FEFAFE;
   margin-top: 2.375rem;
   margin-bottom: 0.9375rem; }
-  /* line 197, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 203, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .img-slider .slide {
     position: relative; }
-    /* line 199, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+    /* line 205, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
     .img-slider .slide .img-text {
       top: 50%;
       position: absolute;
@@ -7578,19 +7582,19 @@ table.hover tr:nth-of-type(even):hover {
       z-index: 2;
       padding-left: 2rem;
       padding-right: 2rem; }
-      /* line 207, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+      /* line 213, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
       .img-slider .slide .img-text h1 {
         color: #fefefe; }
-      /* line 210, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+      /* line 216, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
       .img-slider .slide .img-text p {
         color: #f9f9eb;
         font-size: 1.75rem; }
       @media screen and (min-width: 43.75em) {
-        /* line 199, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+        /* line 205, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
         .img-slider .slide .img-text {
           padding-left: 6rem;
           padding-right: 6rem; } }
-    /* line 219, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+    /* line 225, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
     .img-slider .slide .img-text::after {
       display: block;
       height: 0.8125rem;
@@ -7598,13 +7602,13 @@ table.hover tr:nth-of-type(even):hover {
       background-image: url("../imgs/slider-lines.png");
       content: " ";
       margin: 0 auto; }
-  /* line 229, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 235, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .img-slider .img {
     height: 100%;
     width: 100%;
     outline: 4px solid #fcdad8;
     outline-offset: -15px; }
-  /* line 236, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 242, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .img-slider .slick-prev, .img-slider .slick-next {
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -7615,41 +7619,41 @@ table.hover tr:nth-of-type(even):hover {
     z-index: 1;
     display: none !important; }
     @media screen and (min-width: 43.75em) {
-      /* line 236, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+      /* line 242, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
       .img-slider .slick-prev, .img-slider .slick-next {
         display: block !important; } }
-  /* line 247, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 253, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .img-slider .slick-prev {
     left: 4.5rem; }
-  /* line 250, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 256, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .img-slider .slick-next {
     right: 4.5rem; }
-  /* line 253, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 259, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .img-slider .slick-prev:before, .img-slider .slick-next:before {
     color: #a5acaf;
     width: 1.5625rem;
     height: 3.125rem; }
-  /* line 258, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 264, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .img-slider .slick-prev:before {
     content: url("../imgs/prev-arrow.png"); }
-  /* line 261, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 267, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .img-slider .slick-next:before {
     content: url("../imgs/next-arrow.png"); }
 
-/* line 267, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+/* line 273, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
 .share-transform-container {
   border-top: 1px solid #fcdad8;
   border-left: 1px solid #fcdad8;
   border-right: 1px solid #fcdad8;
   padding: 2.5rem 0; }
-  /* line 272, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 278, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .share-transform-container .share-transform-content {
     text-align: center;
     margin-top: 2.5rem; }
-  /* line 276, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 282, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .share-transform-container h1 {
     margin-bottom: 1.25rem; }
-    /* line 278, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+    /* line 284, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
     .share-transform-container h1::after {
       content: "";
       background-image: url("../imgs/footer-lines.png");
@@ -7658,10 +7662,10 @@ table.hover tr:nth-of-type(even):hover {
       display: block;
       margin: 0 auto; }
 
-/* line 289, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+/* line 295, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
 .sharethis {
   text-align: center; }
-  /* line 291, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 297, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .sharethis .st_instagram_custom, .sharethis .st_pinterest_custom, .sharethis .st_facebook_custom, .sharethis .st_googleplus_custom {
     margin-right: 0.7rem;
     display: inline-block;
@@ -7669,10 +7673,10 @@ table.hover tr:nth-of-type(even):hover {
     height: 2.375rem;
     background-repeat: no-repeat;
     cursor: pointer; }
-  /* line 299, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 305, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .sharethis .st_instagram_custom {
     background-image: url("../imgs/instagram-foot.png"); }
-  /* line 302, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 308, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .sharethis .st_pinterest_custom {
     margin-right: 0.7rem;
     display: inline-block;
@@ -7680,18 +7684,18 @@ table.hover tr:nth-of-type(even):hover {
     height: 2.375rem;
     background-image: url("../imgs/pinterest-foot.png");
     background-repeat: no-repeat; }
-  /* line 310, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 316, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .sharethis .st_facebook_custom {
     background-image: url("../imgs/facebook-foot.png"); }
-  /* line 313, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 319, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .sharethis .st_googleplus_custom {
     background-image: url("../imgs/google-foot.png"); }
 
-/* line 318, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+/* line 324, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
 .transform {
   border-left: 2px solid #dddddd; }
 
-/* line 322, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+/* line 328, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
 .transform-button {
   background-color: #a9aaaa;
   border: 2px solid #fefefe;
@@ -7699,78 +7703,75 @@ table.hover tr:nth-of-type(even):hover {
   height: 2.375rem;
   width: 5.625rem;
   color: #fefefe; }
-  /* line 329, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 335, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .transform-button:hover {
     background-color: #8a8a8a; }
 
-/* line 333, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+/* line 339, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
 .footer {
   text-align: center;
   font-size: 0.75rem;
   color: #dddddd;
   margin-bottom: 20px; }
   @media screen and (min-width: 75em) {
-    /* line 333, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+    /* line 339, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
     .footer {
       margin-bottom: 5rem; } }
 
-/* line 342, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+/* line 348, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
 .footer-info {
   border: 1px solid #fcdad8;
   padding: 1.875rem 0; }
-  /* line 345, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 351, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .footer-info p {
     margin-bottom: 0; }
 
 @media screen and (max-width: 43.6875em) {
-  /* line 352, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 358, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .img-slider {
     height: 20rem; }
-  /* line 355, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 361, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .img-slider .slide .img-text h1 {
     font-size: 1.125rem; }
-  /* line 358, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 364, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .img-slider .slide .img-text p {
     display: none; }
-  /* line 361, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 367, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .share-transform-container .share-transform-content {
     margin-top: 0.5rem; }
-  /* line 364, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 370, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .share {
     margin-bottom: 1rem; }
-    /* line 366, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+    /* line 372, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
     .share h1 {
       font-size: 1.25rem; }
-  /* line 371, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 377, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .transform h1 {
     font-size: 1.25rem; }
-  /* line 375, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 381, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   #gform_2 .gform_body .gform_page_footer .gform_previous_button {
-    margin-right: 1rem; }
-  /* line 378, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
-  #gform_2 .gform_body .gform_page_footer .gform_next_button {
-    margin-top: 0; } }
+    margin-right: 1rem; } }
 
 @media screen and (min-width: 43.75em) and (max-width: 74.9375em) {
-  /* line 385, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 387, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .img-slider {
     height: 30rem; }
-  /* line 388, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 390, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .img-slider .slide .img-text h1 {
     font-size: 1.5rem; }
-  /* line 391, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 393, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .img-slider .slide .img-text p {
     font-size: 1.25rem; }
-  /* line 394, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 396, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .footer-info {
     margin-top: .25rem; }
-  /* line 397, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 399, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .share-transform-container .share-transform-content {
     margin-top: 0.5rem; }
-  /* line 401, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 403, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .share h1 {
     font-size: 1.25rem; }
-  /* line 406, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
+  /* line 408, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_home.scss */
   .transform h1 {
     font-size: 1.25rem; } }
 
@@ -8189,28 +8190,33 @@ table.hover tr:nth-of-type(even):hover {
     .portfolio-teasers .teaser {
       margin-bottom: 15px; } }
 
+@media screen and (max-width: 43.6875em) {
+  /* line 71, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_portfolio-teasers.scss */
+  .portfolio-teasers .small-teasers .teaser::after, .portfolio-teasers .small-teasers .content, .portfolio-teasers .small-teasers .border {
+    display: block; } }
+
 @media screen and (min-width: 43.75em) {
   /* line 69, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_portfolio-teasers.scss */
   .portfolio-teasers .small-teasers {
     display: none; } }
 
-/* line 74, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_portfolio-teasers.scss */
+/* line 79, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_portfolio-teasers.scss */
 .portfolio-teasers .medium-teasers {
   display: none; }
   @media screen and (min-width: 43.75em) {
-    /* line 74, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_portfolio-teasers.scss */
+    /* line 79, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_portfolio-teasers.scss */
     .portfolio-teasers .medium-teasers {
       display: block; } }
   @media screen and (min-width: 75em) {
-    /* line 74, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_portfolio-teasers.scss */
+    /* line 79, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_portfolio-teasers.scss */
     .portfolio-teasers .medium-teasers {
       display: none; } }
 
-/* line 83, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_portfolio-teasers.scss */
+/* line 88, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_portfolio-teasers.scss */
 .portfolio-teasers .large-teasers {
   display: none; }
   @media screen and (min-width: 75em) {
-    /* line 83, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_portfolio-teasers.scss */
+    /* line 88, /Users/eriktolentino/Desktop/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_portfolio-teasers.scss */
     .portfolio-teasers .large-teasers {
       display: block; } }
 

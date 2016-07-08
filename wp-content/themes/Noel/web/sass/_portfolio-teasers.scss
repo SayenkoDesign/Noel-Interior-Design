@@ -67,6 +67,11 @@
     }
   }
   .small-teasers {
+    @include breakpoint(small only) {
+        .teaser::after, .content, .border {
+            display: block;
+        }
+    }
     @include breakpoint(medium) {
       display:none;
     }
