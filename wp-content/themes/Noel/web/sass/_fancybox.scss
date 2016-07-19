@@ -3,7 +3,7 @@
 .my-close, .my-contact-close {
     position: absolute;
     right: 2rem;
-    top: 2rem;
+    top: rem-calc(-28px);
     width: rem-calc(23px);
     height: rem-calc(22px);
     background-image: url("../imgs/x-close.png");
@@ -84,6 +84,8 @@
 .fancybox-opened .fancybox-skin {
 	border-radius: 0;
     box-shadow: none;
+    position: relative;
+    z-index: 8080;
 }
 
 //contact form
@@ -230,8 +232,11 @@
             }
         }
         h1 {
-            font-size: 2rem;
+            font-size: 1.5rem;
             padding-bottom: 0;
+            @include breakpoint(medium) {
+                font-size: 2rem;
+            }
         }
         h4 {
             color: $primaryGrey;
@@ -254,9 +259,6 @@
             padding: 0 rem-calc(80px);
         }
     }
-}
-.fancybox-inner {
-    height: auto !important;
 }
 .contact-button {
     margin-top: 10rem;

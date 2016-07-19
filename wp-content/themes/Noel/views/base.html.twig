@@ -7,9 +7,7 @@
         <title>{{ SP.WordPress.title() }}</title>
         {% if SP.ACF.get_field('favicon', 'option') %}
             <link rel="shortcut icon" type="image/png" href="{{ SP.ACF.get_field('favicon', 'option').url }}"/>
-            <link rel="shortcut icon" type="image/png" href="{{ SP.ACF.get_field('favicon', 'option').url }}"/>
         {% else %}
-            <link rel="shortcut icon" type="image/png" href="{{ SP.ACF.get_field('logo', 'option').url }}"/>
             <link rel="shortcut icon" type="image/png" href="{{ SP.ACF.get_field('logo', 'option').url }}"/>
         {% endif %}
     {% endblock %}
@@ -25,6 +23,7 @@
     {% endblock %}
 
     {% block content %}
+        {% if SP.WordPress.thePost() %}
         <div class="two-column content">
             <div class="row">
                 <div class="medium-5 medium-push-7 large-7 large-push-5 columns right-column">
@@ -36,18 +35,18 @@
                         <div class="landscape">
                             {% for row in SP.ACF.get_field('landscape') %}
                                 <div class="row column landscape-top">
-                                    <a class="fancybox" href="{{ row.large.url }}" rel="group" title="Bedroom Before & After">
+                                    <a class="fancybox" href="{{ row.large.url }}" rel="group" title="{{ row.large.title }}">
                                         <img src="{{ row.large.sizes.landscape_top }}" alt="first image" class="fade">
                                     </a>
                                 </div>
                                 <div class="row landscape-bottom hide-for-small-only">
                                     <div class="medium-6 columns">
-                                        <a class="fancybox" href="{{ row.large.url }}" rel="group" title="Bedroom Before & After">
+                                        <a class="fancybox" href="{{ row.small_left.url }}" rel="group" title="{{ row.small_left.title }}">
                                             <img src="{{ row.small_left.sizes.landscape_bottom }}" alt="" class="fade">
                                         </a>
                                     </div>
                                     <div class="medium-6 columns">
-                                        <a class="fancybox" href="{{ row.large.url }}" rel="group" title="Bedroom Before & After">
+                                        <a class="fancybox" href="{{ row.small_right.url }}" rel="group" title="{{ row.small_right.title }}">
                                             <img src="{{ row.small_right.sizes.landscape_bottom }}" alt="" class="fade">
                                         </a>
                                     </div>
@@ -58,39 +57,81 @@
                         <div class="mixed">
                             {% for row in SP.ACF.get_field('mixed') %}
                                 <div class="row column mixed-top">
-                                    <a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="Bedroom Before & After">
+                                    {% if row.large_landscape_before %}
+                                        <a class="fancybox hide" href="{{ row.large_landscape_before.url }}" rel="group" title="{{ row.large_landscape_before.title }}">
+                                            <img src="{{ row.large_landscape_before.url }}" alt="">
+                                        </a>
+                                    {% endif %}
+                                    <a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="{{ row.large_landscape.title }}">
                                         <img src="{{ row.large_landscape.sizes.mixed_top }}" alt="" class="fade">
                                     </a>
                                 </div>
                                 <div class="row mixed-middle hide-for-small-only">
                                     <div class="medium-6 columns">
-                                        <a class="fancybox" href="{{ row.large_portrait.url }}" rel="group"  title="Bedroom Before & After">
-                                            <img src="{{ row.large_portrait.sizes.mixed_left }}" alt="" class="fade"></a>
+                                        {% if row.large_portrait_before %}
+                                            <a class="fancybox hide" href="{{ row.large_portrait_before.url }}" rel="group" title="{{ row.large_portrait_before.title }}">
+                                                <img src="{{ row.large_portrait_before.url }}" alt="">
+                                            </a>
+                                        {% endif %}
+                                        <a class="fancybox" href="{{ row.large_portrait.url }}" rel="group"  title="{{ row.large_portrait.title }}">
+                                            <img src="{{ row.large_portrait.sizes.mixed_left }}" alt="" class="fade">
+                                        </a>
                                     </div>
                                     <div class="medium-6 columns">
-                                        <a class="fancybox" href="{{ row.top_small_landscape.url }}" rel="group" title="Bedroom Before & After">
+                                        {% if row.large_portrait_before %}
+                                            <a class="fancybox hide" href="{{ row.top_small_landscape_before.url }}" rel="group" title="{{ row.top_small_landscape_before.title }}">
+                                                <img src="{{ row.top_small_landscape_before.url }}" alt="">
+                                            </a>
+                                        {% endif %}
+                                        <a class="fancybox" href="{{ row.top_small_landscape.url }}" rel="group" title="{{ row.top_small_landscape.title }}">
                                             <img src="{{ row.top_small_landscape.sizes.mixed_right }}" alt="" class="mixed-middle-top fade">
                                         </a>
-                                        <a class="fancybox" href="{{ row.bottom_small_landscape.url }}" rel="group" title="Bedroom Before & After">
+                                        {% if row.bottom_small_landscape_before %}
+                                            <a class="fancybox hide" href="{{ row.bottom_small_landscape_before.url }}" rel="group" title="{{ row.bottom_small_landscape_before.title }}">
+                                                <img src="{{ row.bottom_small_landscape_before.url }}" alt="">
+                                            </a>
+                                        {% endif %}
+                                        <a class="fancybox" href="{{ row.bottom_small_landscape.url }}" rel="group" title="{{ row.bottom_small_landscape.title }}">
                                             <img src="{{ row.bottom_small_landscape.sizes.mixed_right }}" alt="" class="fade">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="row hide-for-small-only">
                                     <div class="medium-4 columns fade">
-                                        <a class="fancybox" href="{{ row.left_square.url }}" rel="group" title="Bedroom Before & After">
-                                            <img src="{{ row.left_square.sizes.mixed_bottom }}" alt="">
-                                        </a>
+                                        {% if row.left_square_before %}
+                                            <a class="fancybox hide" href="{{ row.left_square_before.url }}" rel="group" title="{{ row.left_square_before.title }}">
+                                                <img src="{{ row.left_square_before.url }}" alt="">
+                                            </a>
+                                        {% endif %}
+                                        {% if row.left_square %}
+                                            <a class="fancybox" href="{{ row.left_square.url }}" rel="group" title="{{ row.left_square.title }}">
+                                                <img src="{{ row.left_square.sizes.mixed_bottom }}" alt="">
+                                            </a>
+                                        {% endif %}
                                     </div>
                                     <div class="medium-4 columns fade">
-                                        <a class="fancybox" href="{{ row.center_square.url }}" rel="group" title="Bedroom Before & After">
-                                            <img src="{{ row.center_square.sizes.mixed_bottom }}" alt="">
-                                        </a>
+                                        {% if row.center_square_before %}
+                                            <a class="fancybox hide" href="{{ row.center_square_before.url }}" rel="group" title="{{ row.center_square_before.title }}">
+                                                <img src="{{ row.center_square_before.url }}" alt="">
+                                            </a>
+                                        {% endif %}
+                                        {% if row.center_square %}
+                                            <a class="fancybox" href="{{ row.center_square.url }}" rel="group" title="{{ row.center_square.title }}">
+                                                <img src="{{ row.center_square.sizes.mixed_bottom }}" alt="">
+                                            </a>
+                                        {% endif %}
                                     </div>
                                     <div class="medium-4 columns fade">
-                                        <a class="fancybox" href="{{ row.right_square.url }}" rel="group" title="Bedroom Before & After">
-                                            <img src="{{ row.right_square.sizes.mixed_bottom }}" alt="">
-                                        </a>
+                                        {% if row.right_square_before %}
+                                            <a class="fancybox hide" href="{{ row.right_square_before.url }}" rel="group" title="{{ row.right_square_before.title }}">
+                                                <img src="{{ row.right_square_before.url }}" alt="">
+                                            </a>
+                                        {% endif %}
+                                        {% if row.right_square %}
+                                            <a class="fancybox" href="{{ row.right_square.url }}" rel="group" title="{{ row.right_square.title }}">
+                                                <img src="{{ row.right_square.sizes.mixed_bottom }}" alt="">
+                                            </a>
+                                        {% endif %}
                                     </div>
                                 </div>
                             {% endfor %}
@@ -133,6 +174,7 @@
                 </div>
             </div>
         </div>
+        {% endif %}
     {% endblock %}
 
     {% block shareTransform %}

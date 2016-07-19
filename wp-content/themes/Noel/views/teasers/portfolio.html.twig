@@ -4,7 +4,7 @@
         {% if SP.ACF.get_field('subtitle') %}
             <h3>{{ SP.ACF.get_field('subtitle') }}</h3>
         {% endif %}
-        <h2>{{ SP.WordPress.title() }}</h2>
+        <h2>{{ SP.WordPress.title( SP.WordPress.ID) }}</h2>
     </div>
     <div class="border"></div>
 </a>
