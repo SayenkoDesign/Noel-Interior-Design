@@ -57,79 +57,79 @@
                         <div class="mixed">
                             {% for row in SP.ACF.get_field('mixed') %}
                                 <div class="row column mixed-top">
+                                    <a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="{{ row.large_landscape.title }}">
+                                        <img src="{{ row.large_landscape.sizes.mixed_top }}" alt="" class="fade">
+                                    </a>
                                     {% if row.large_landscape_before %}
                                         <a class="fancybox hide" href="{{ row.large_landscape_before.url }}" rel="group" title="{{ row.large_landscape_before.title }}">
                                             <img src="{{ row.large_landscape_before.url }}" alt="">
                                         </a>
                                     {% endif %}
-                                    <a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="{{ row.large_landscape.title }}">
-                                        <img src="{{ row.large_landscape.sizes.mixed_top }}" alt="" class="fade">
-                                    </a>
                                 </div>
                                 <div class="row mixed-middle hide-for-small-only">
                                     <div class="medium-6 columns">
+                                        <a class="fancybox" href="{{ row.large_portrait.url }}" rel="group"  title="{{ row.large_portrait.title }}">
+                                            <img src="{{ row.large_portrait.sizes.mixed_left }}" alt="" class="fade">
+                                        </a>
                                         {% if row.large_portrait_before %}
                                             <a class="fancybox hide" href="{{ row.large_portrait_before.url }}" rel="group" title="{{ row.large_portrait_before.title }}">
                                                 <img src="{{ row.large_portrait_before.url }}" alt="">
                                             </a>
                                         {% endif %}
-                                        <a class="fancybox" href="{{ row.large_portrait.url }}" rel="group"  title="{{ row.large_portrait.title }}">
-                                            <img src="{{ row.large_portrait.sizes.mixed_left }}" alt="" class="fade">
-                                        </a>
                                     </div>
                                     <div class="medium-6 columns">
-                                        {% if row.large_portrait_before %}
+                                        <a class="fancybox" href="{{ row.top_small_landscape.url }}" rel="group" title="{{ row.top_small_landscape.title }}">
+                                            <img src="{{ row.top_small_landscape.sizes.mixed_right }}" alt="" class="mixed-middle-top fade">
+                                        </a>
+                                        {% if row.top_small_landscape_before %}
                                             <a class="fancybox hide" href="{{ row.top_small_landscape_before.url }}" rel="group" title="{{ row.top_small_landscape_before.title }}">
                                                 <img src="{{ row.top_small_landscape_before.url }}" alt="">
                                             </a>
                                         {% endif %}
-                                        <a class="fancybox" href="{{ row.top_small_landscape.url }}" rel="group" title="{{ row.top_small_landscape.title }}">
-                                            <img src="{{ row.top_small_landscape.sizes.mixed_right }}" alt="" class="mixed-middle-top fade">
+                                        <a class="fancybox" href="{{ row.bottom_small_landscape.url }}" rel="group" title="{{ row.bottom_small_landscape.title }}">
+                                            <img src="{{ row.bottom_small_landscape.sizes.mixed_right }}" alt="" class="fade">
                                         </a>
                                         {% if row.bottom_small_landscape_before %}
                                             <a class="fancybox hide" href="{{ row.bottom_small_landscape_before.url }}" rel="group" title="{{ row.bottom_small_landscape_before.title }}">
                                                 <img src="{{ row.bottom_small_landscape_before.url }}" alt="">
                                             </a>
                                         {% endif %}
-                                        <a class="fancybox" href="{{ row.bottom_small_landscape.url }}" rel="group" title="{{ row.bottom_small_landscape.title }}">
-                                            <img src="{{ row.bottom_small_landscape.sizes.mixed_right }}" alt="" class="fade">
-                                        </a>
                                     </div>
                                 </div>
                                 <div class="row hide-for-small-only">
                                     <div class="medium-4 columns fade">
-                                        {% if row.left_square_before %}
-                                            <a class="fancybox hide" href="{{ row.left_square_before.url }}" rel="group" title="{{ row.left_square_before.title }}">
-                                                <img src="{{ row.left_square_before.url }}" alt="">
-                                            </a>
-                                        {% endif %}
                                         {% if row.left_square %}
                                             <a class="fancybox" href="{{ row.left_square.url }}" rel="group" title="{{ row.left_square.title }}">
                                                 <img src="{{ row.left_square.sizes.mixed_bottom }}" alt="">
                                             </a>
                                         {% endif %}
-                                    </div>
-                                    <div class="medium-4 columns fade">
-                                        {% if row.center_square_before %}
-                                            <a class="fancybox hide" href="{{ row.center_square_before.url }}" rel="group" title="{{ row.center_square_before.title }}">
-                                                <img src="{{ row.center_square_before.url }}" alt="">
+                                        {% if row.left_square_before %}
+                                            <a class="fancybox hide" href="{{ row.left_square_before.url }}" rel="group" title="{{ row.left_square_before.title }}">
+                                                <img src="{{ row.left_square_before.url }}" alt="">
                                             </a>
                                         {% endif %}
+                                    </div>
+                                    <div class="medium-4 columns fade">
                                         {% if row.center_square %}
                                             <a class="fancybox" href="{{ row.center_square.url }}" rel="group" title="{{ row.center_square.title }}">
                                                 <img src="{{ row.center_square.sizes.mixed_bottom }}" alt="">
                                             </a>
                                         {% endif %}
-                                    </div>
-                                    <div class="medium-4 columns fade">
-                                        {% if row.right_square_before %}
-                                            <a class="fancybox hide" href="{{ row.right_square_before.url }}" rel="group" title="{{ row.right_square_before.title }}">
-                                                <img src="{{ row.right_square_before.url }}" alt="">
+                                        {% if row.center_square_before %}
+                                            <a class="fancybox hide" href="{{ row.center_square_before.url }}" rel="group" title="{{ row.center_square_before.title }}">
+                                                <img src="{{ row.center_square_before.url }}" alt="">
                                             </a>
                                         {% endif %}
+                                    </div>
+                                    <div class="medium-4 columns fade">
                                         {% if row.right_square %}
                                             <a class="fancybox" href="{{ row.right_square.url }}" rel="group" title="{{ row.right_square.title }}">
                                                 <img src="{{ row.right_square.sizes.mixed_bottom }}" alt="">
+                                            </a>
+                                        {% endif %}
+                                        {% if row.right_square_before %}
+                                            <a class="fancybox hide" href="{{ row.right_square_before.url }}" rel="group" title="{{ row.right_square_before.title }}">
+                                                <img src="{{ row.right_square_before.url }}" alt="">
                                             </a>
                                         {% endif %}
                                     </div>
@@ -190,11 +190,13 @@
             <div class="row column contact-main-row">
                 <div class="large-4 columns left-contact-column">
                     <div class="row column">
-                        <div class="contact-logo"></div>
+                        <div class="contact-logo">
+                            <img src="{{ SP.ACF.get_field('lightbox_logo', 'option').url }}" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="large-8 columns right-contact-column">
-                    <h1>Call 509.952.3906</h1>
+                    <h1>Call {{ SP.ACF.get_field('phone_number', 'option') }}</h1>
                     <h4>Michelle Will Respond Within a Business Day</h4>
                     {{ SP.WordPress.getForm(SP.ACF.get_field('lightbox_form_id', 'option'), false, false, false, null, true) }}
                 </div>

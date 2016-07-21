@@ -2,7 +2,7 @@
 
 .my-close, .my-contact-close {
     position: absolute;
-    right: 2rem;
+    right: 0;
     top: rem-calc(-28px);
     width: rem-calc(23px);
     height: rem-calc(22px);
@@ -110,22 +110,22 @@
     }
     .left-contact-column {
         display: none;
-        background-color: $primaryPink;
         border: 7px solid white;
         outline: 1px solid black;
-        box-shadow:inset 0 0 0 1px black;
-        height: 32.63rem;
         position: relative;
         text-align: center;
+        padding: 0;
+        > .row {
+            min-height: 32.63rem;
+            border: 1px solid $black;
+            background-color: $primaryPink;
+        }
         .contact-logo {
-            display: inline-block;
+            width: calc(100% - 2px);
+            text-align: center;
             position: absolute;
-            top: 47%;
-            transform: translate(-50%, -50%);
-            height: 5.125rem;
-            width: 15.75rem;
-            background-image: url('../imgs/contact-logo.png');
-            background-repeat: no-repeat;
+            top: 50%;
+            transform: translateY(-50%);
         }
         @include breakpoint(large) {
             display: block;

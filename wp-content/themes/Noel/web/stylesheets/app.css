@@ -8235,7 +8235,7 @@ table.hover tr:nth-of-type(even):hover {
 /* line 3, c:/xampp/htdocs/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_fancybox.scss */
 .my-close, .my-contact-close {
   position: absolute;
-  right: 2rem;
+  right: 0;
   top: -1.75rem;
   width: 1.4375rem;
   height: 1.375rem;
@@ -8356,25 +8356,25 @@ table.hover tr:nth-of-type(even):hover {
   /* line 111, c:/xampp/htdocs/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_fancybox.scss */
   .fancybox-contact-content .left-contact-column {
     display: none;
-    background-color: #fcdad8;
     border: 7px solid white;
     outline: 1px solid black;
-    box-shadow: inset 0 0 0 1px black;
-    height: 32.63rem;
     position: relative;
-    text-align: center; }
-    /* line 120, c:/xampp/htdocs/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_fancybox.scss */
+    text-align: center;
+    padding: 0; }
+    /* line 118, c:/xampp/htdocs/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_fancybox.scss */
+    .fancybox-contact-content .left-contact-column > .row {
+      min-height: 32.63rem;
+      border: 1px solid #0a0a0a;
+      background-color: #fcdad8; }
+    /* line 123, c:/xampp/htdocs/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_fancybox.scss */
     .fancybox-contact-content .left-contact-column .contact-logo {
-      display: inline-block;
+      width: calc(100% - 2px);
+      text-align: center;
       position: absolute;
-      top: 47%;
-      -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-      height: 5.125rem;
-      width: 15.75rem;
-      background-image: url("../imgs/contact-logo.png");
-      background-repeat: no-repeat; }
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
     @media screen and (min-width: 75em) {
       /* line 111, c:/xampp/htdocs/Noel-Interior-Design/wp-content/themes/Noel/web/sass/_fancybox.scss */
       .fancybox-contact-content .left-contact-column {
