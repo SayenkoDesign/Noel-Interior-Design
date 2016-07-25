@@ -34,6 +34,17 @@ class WordPress
         return $title;
     }
 
+    public function thePost()
+    {
+        if(have_posts()) {
+            the_post();
+
+            return true;
+        }
+
+        return false;
+    }
+
     public function content($more_link_text = null, $strip_teaser = false)
     {
         $content = get_the_content($more_link_text, $strip_teaser);

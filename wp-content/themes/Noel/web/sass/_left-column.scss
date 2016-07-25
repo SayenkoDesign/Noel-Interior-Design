@@ -76,4 +76,8 @@
     @include breakpoint(medium) {
         margin-bottom: 0;
     }
+    .buttons {
+        font-family: Georgia, serif;
+        text-align: center;
+    }
 }

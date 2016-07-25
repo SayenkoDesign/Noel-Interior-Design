@@ -3,6 +3,10 @@ require_once __DIR__.'/App/bootstrap.php';
 require_once __DIR__.'/src/functions.php';
 global $container;
 
+add_action('admin_menu', function () {
+    remove_menu_page('edit.php');
+});
+
 // styles and scripts
 add_action('wp_enqueue_scripts', function (){
     wp_register_style('slick-css', get_template_directory_uri() . '/src/slick/slick/slick.css');
@@ -50,7 +54,7 @@ add_action('init', function() {
     add_image_size('mixed_left', 660, 844, true);
     add_image_size('mixed_right', 650, 400, true);
     add_image_size('mixed_bottom', 650, 550, true);
-    add_image_size('right_large', 1000, 900, true);
+    add_image_size('right_large', 1000, 9999, false);
 
     if(function_exists('acf_add_options_page')) {
         acf_add_options_page([
@@ -58,5 +62,21 @@ add_action('init', function() {
             'capability' => 'edit_theme_options',
             'icon_url' => 'dashicons-sayenko',
         ]);
+
+        if ($googleID = get_field('google_analytics_id', 'option')) {
+            add_action('wp_head', function () use ($googleID) {
+                echo <<<HTML
+            <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                
+                ga('create', '$googleID', 'auto');
+                ga('send', 'pageview');
+            </script>
+HTML;
+            });
+        }
     }
 });

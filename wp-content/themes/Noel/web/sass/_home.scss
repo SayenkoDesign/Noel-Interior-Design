@@ -34,7 +34,7 @@
         background-color: #F1F1F1;
         text-align: center;
         .is-accordion-submenu-parent > a {
-            padding-left: 1rem + rem-calc(22px);
+            padding-left: 1rem + rem-calc(8px);
         }
         .is-accordion-submenu-parent > a::after, .is-accordion-submenu-parent[aria-expanded="true"] > a::after  {
             content: "+";
@@ -52,6 +52,7 @@
         }
         a {
             font-size: rem-calc(14px);
+            text-transform: uppercase;
         }
         .vertical.nested {
             margin: 0;
@@ -350,6 +351,13 @@
     padding: rem-calc(30px) 0;
     p {
         margin-bottom: 0;
+        color: $anchorColor;
+        a {
+            color: $headerColor;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 
